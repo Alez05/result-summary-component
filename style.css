@@ -50,7 +50,6 @@ main {
   height: 100%;
   width: 100%;
   border-radius: 1.375rem;
-  border: 2px solid red;
 }
 
 .result {
@@ -121,7 +120,6 @@ main {
 
 .summary {
   display: grid;
-  /* flex-direction: column; */
   width: 300px;
   padding: 1.5rem;
   position: relative;
@@ -252,4 +250,117 @@ main {
   width: 250px;
   height: 45px;
   cursor: pointer;
+
+  &:active {
+  background: linear-gradient(to bottom, var(--light-slate-blue), var(--light-royal-blue));
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+
+  body {
+    height: 140vh;
+  }
+  main {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+  .container {
+    flex-direction: column;
+    border: none;
+  }
+  .result {
+    width: 100%;
+    height: 50%;
+    border-radius: 0px 0px 36px 36px;
+  }
+  .result__title {
+    font-size: 1.5rem;
+  }
+  .result__score {
+    width: 180px;
+    height: 180px;
+  }
+  .result__score h1 {
+    font-size: 5rem;
+    position: relative;
+    bottom: 12px;
+  }
+  .result__score p {
+    font-size: 1rem;
+  }
+  .review {
+    width: 100%;
+    height:50%;
+    position: relative;
+    bottom: 5px;
+}
+
+  .review h1 {
+    font-size: 2rem;
+  }
+  .review p {
+    font-size: 1.2rem;
+    width: 300px;
+    position: relative;
+    bottom: 22px;
+  }
+  .summary {
+    width: 100%;
+  }
+  .summary__title {
+    width: 100%;
+    height: 50px;
+  }
+  .summary__title h1 {
+    font-size: 1.5rem;
+  }
+
+  .scores {
+    bottom: 0;
+    gap: 12px;
+  }
+  .scores__item {
+    width: 100%;
+    height: 50%;
+  }
+  .scores__item:nth-child(1) {
+    height: 60px;
+  }
+  .scores__item:nth-child(2) {
+    height: 60px;
+  }
+  .scores__item:nth-child(3) {
+    height: 60px;
+  }
+  .scores__item:nth-child(4) {
+    height: 60px;
+  }
+  .scores__icon {
+    width: 25px;
+    height: 25px;
+  }
+  .scores__text {
+    font-size: 1.3rem;
+    left: 50px;
+  }
+  .scores{
+    bottom: 0;
+  }
+  .scores__sp {
+    font-size: 1rem;
+  }
+
+  .submit {
+    bottom: -72px;
+    justify-self: center;
+  }
+  .submit__button {
+    height: 60px;
+    font-size: 1.5rem;
+    width: 342px;
+  }
+
 }

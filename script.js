@@ -11,7 +11,7 @@ const displayScores = () => {
         const icon = document.createElement('img');
         icon.src = scores.icon;
         icon.classList.add('scores__icon');
-        icon.alt = `${scores.category} icon`;
+        icon.alt = `icons for ${scores.category}`;
 
         const text = document.createElement('span');
         text.textContent = `${scores.category}`;

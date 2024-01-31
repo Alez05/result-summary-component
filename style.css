@@ -15,7 +15,10 @@ body {
   align-items: center;
   height:50vw;
   position: relative;
+}
 
+html {
+  scroll-behavior: smooth;
 }
 
 /*pallette of colors*/
@@ -37,6 +40,8 @@ body {
   --light-lavender: hsl(241, 100%, 89%);
   --dark-gray-blue: hsl(224, 30%, 27%);
 }
+
+/*components*/
 
 main {
   width: 600px;

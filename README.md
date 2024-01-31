@@ -23,7 +23,7 @@ The challange given by Frontend mentor has helped me to stregnhten my knowledge 
 ### Links
 
 - Solution URL: (https://github.com/Alez05/result-summary-component.git)
-- Live Site URL: (resultsumarycomponent.netlify.app)
+- Live Site URL: (https://resultsumarycomponent.netlify.app)
 
 ## My process
 
